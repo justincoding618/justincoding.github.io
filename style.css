@@ -16,6 +16,30 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        a:link {
+          color: white;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:visited {
+          color: gray;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+        a:active {
+          color: #45b7d1;
+          background-color: transparent;
+          text-decoration: underline;
+        }
         
         body {
             font-family: 'Inter', sans-serif;
