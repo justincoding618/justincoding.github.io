@@ -249,6 +249,12 @@ a:active {
   color: #fff;
 }
 
+.table-scroll {
+  display: block;
+  overflow-x: auto;
+  white-space: no-wrap;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
