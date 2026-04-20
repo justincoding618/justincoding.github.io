@@ -19,7 +19,7 @@ const loadNavigationBar = function (htmlFile, elementName) {
     });
 };
 
-loadNavigationBar("/reusable/navbar.html", "navbar-holder");
+loadNavigationBar("reusable/navbar.html", "navbar-holder");
 
 function initializeNavbar() {
   console.log("Initializing navbar...");
