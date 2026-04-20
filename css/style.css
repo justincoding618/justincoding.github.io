@@ -298,9 +298,11 @@ a:active {
   .box ul {
     font-size: 12px;
   }
-  img {
-    max-width: 60%;
+  .profile-image {
+    max-width: 100%;
+    display: block;
     height: auto;
+    flex-direction: column;
     flex-shrink: 0;
   }
   th {
