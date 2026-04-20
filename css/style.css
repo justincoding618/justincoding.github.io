@@ -312,6 +312,14 @@ a:active {
   td {
     font-size: 12px;
   }
+  .container {
+    max-width: 100%;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
   .navbar {
     position: relative;
     min-height: 50px;
