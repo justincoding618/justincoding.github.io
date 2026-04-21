@@ -194,7 +194,7 @@ a:hover {
 }
 
 a:active {
-  color: #ffd700;
+  color: #fdb719;
 }
 
 .mobile-container {
@@ -241,12 +241,14 @@ a:active {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-weight: 500;
 }
 
 .navbar a:hover,
 .navbar a.active {
   background-color: #ba0c2f;
   color: #fff;
+  font-weight: 500;
 }
 
 .table-scroll {
