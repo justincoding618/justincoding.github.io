@@ -21,6 +21,18 @@ const loadNavigationBar = function (htmlFile, elementName) {
 
 loadNavigationBar("reusable/navbar.html", "navbar-holder");
 
+const loadIcon = function (iconFile) {
+  const link = document.createElement("link");
+  link.rel = "icon";
+  link.href = iconFile;
+  link.type = "image/x-icon";
+  document.head.appendChild(link);
+};
+
+loadIcon(
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Eo_circle_red_letter-j.svg/1280px-Eo_circle_red_letter-j.svg.png",
+);
+
 function initializeNavbar() {
   console.log("Initializing navbar...");
 
