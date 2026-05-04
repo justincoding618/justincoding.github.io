@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Server Rework</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div id="navbar-holder"></div>
+    <a
+      href="https://justincoding618.github.io/justincoding.github.io/projects.html"
+      >&#8592; Return to Project Page</a
+    >
+    <article>
+      <h1>Game Server Rework</h1>
+      <p>
+        Do you remember
+        <a href="https://en.wikipedia.org/wiki/Sonic_Runners">a mobile game</a>
+        that SEGA and Sonic Team developed in the mid-2010s that played as an
+        endless runner? Development for the game started in late 2013, where
+        Sonic Team wanted to take advantage of attracting smartphone users.
+        Development lasted for about a year and a half. On February 26, 2015,
+        Sonic Runners was soft launched in Canada and Japan. The game was
+        released worldwide on June 25, 2015. Sadly, because the game failed
+        financially, Sonic Runners was globally shutdown on July 27, 2016. Sonic
+        Runners was definitely one of my favorite mobile games during my college
+        days, and was saddened when it shutdown.
+      </p>
+      <p>
+        Sonic Runners was revived on July 15, 2019. The revival took about three
+        years until it was made live. The initial server software only worked
+        for Timed Mode. Another server software, called
+        <a href="https://github.com/RunnersRevival/outrun">Outrun</a>, began
+        development in August 2019 to replace the initial software. It was
+        written in Go and went live on November 2019 and has since been the
+        current server software.
+      </p>
+      <p>
+        Development to replace Outrun began in October 2022. The server is coded
+        in C# and utilizes SQL and ASP.NET Core. The SQL functionality provides
+        the structural databases to provide data information for users,
+        including Story Mode, Timed Mode, prize incentives, and Premium Roulette
+        odds. The server code in C# and ASP.NET is served to provide logic in
+        reading the database from the SQL files as well as provide logic for
+        players in the game. In addition, it is aimed to be as accurate to the
+        original game as possible.
+      </p>
+      <p>
+        After upskilling in SQL and C#, I began to slowly contribute to this
+        project. After upskilling in ASP.NET Core, I began to majorly contribute
+        to the project. I began by writing SQL files. The SQL files would
+        provide the database foundations for the new server to read on. My goal
+        is to later put my C# and ASP.NET Core knowledge to good use to be able
+        to help replace the current server software and replicate the behavior
+        of the original game.
+      </p>
+      <p>
+        The Sonic Runners Revival project is a completely non-profit project.
+        Because the intellectual properties are claimed by SEGA and Sonic Team,
+        I, along with other team members of the project, cannot make money off
+        of this project. We do this project during our free times to keep the
+        memories of Sonic Runners alive for fans who miss playing it or have
+        never played Sonic Runners when it was live from 2015-2016.
+      </p>
+    </article>
+    <script src="https://justincoding618.github.io/justincoding.github.io/scripts/app.js"></script>
+  </body>
+</html>
