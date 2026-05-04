@@ -33,7 +33,7 @@ const loadIcon = function (iconFile) {
 };
 
 loadIcon(
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Eo_circle_red_letter-j.svg/1280px-Eo_circle_red_letter-j.svg.png",
+  "https://justincoding618.github.io/justincoding.github.io/images/red-circle-j.png",
 );
 
 function initializeNavbar() {
