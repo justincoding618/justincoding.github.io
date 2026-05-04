@@ -19,7 +19,10 @@ const loadNavigationBar = function (htmlFile, elementName) {
     });
 };
 
-loadNavigationBar("reusable/navbar.html", "navbar-holder");
+loadNavigationBar(
+  "https://justincoding618.github.io/justincoding.github.io/reusable/navbar.html",
+  "navbar-holder",
+);
 
 const loadIcon = function (iconFile) {
   const link = document.createElement("link");
