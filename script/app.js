@@ -24,16 +24,22 @@ loadNavigationBar(
   "navbar-holder",
 );
 
-const loadIcon = function (iconFile) {
+const loadHeadFeature = function (rel, File, type = "") {
   const link = document.createElement("link");
-  link.rel = "icon";
-  link.href = iconFile;
-  link.type = "image/x-icon";
+  link.rel = rel;
+  link.href = File;
+  link.type = type;
   document.head.appendChild(link);
 };
 
-loadIcon(
+loadHeadFeature(
+  "stylesheet",
+  "https://justincoding618.github.io/justincoding.github.io/css/style.css",
+);
+loadHeadFeature(
+  "icon",
   "https://justincoding618.github.io/justincoding.github.io/images/red-circle-j.png",
+  "x/image",
 );
 
 function initializeNavbar() {
