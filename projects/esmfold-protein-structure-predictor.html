@@ -13,7 +13,55 @@
     >
     <article>
       <h1>ESMFold Protein Structure Predictor</h1>
-      <h2><center>Page Under Construction! Coming Soon!</center></h2>
+      <p>
+        Back around 2022, the Data Professor created
+        <a
+          href="https://www.youtube.com/watch?v=GHoE4VkDehY&pp=ygUWZGF0YSBwcm9mZXNzb3IgZXNtZm9sZA%3D%3D"
+          >an ESMFold application</a
+        >
+        that would predict a protein structure from a given sequence. My project
+        builds off of the Data Professor's ESMFold application. However, I
+        relied on Claude AI to help optimize the code.
+      </p>
+      <p>The main application has four defined functions:</p>
+      <ul>
+        <li>
+          The <b>validate_sequence()</b> function takes one argument and tries
+          to read a given protein sequence.
+        </li>
+        <li>
+          The <b>render_molecule()</b> function takes three arguments. The first
+          is a pdbfile of the protein. The second is the color scheme to
+          visualize the protein. The third is to enable spinning so that the
+          protein structure can be viewed on different sides.
+        </li>
+        <li>
+          The <b>plot_plddt_scores()</b> function takes one argument, which is
+          the structure of the protein. It produces a figure that shows the plot
+          of each residue position and the respective pLDDT score. A score that
+          is higher than 90 indicates a very high confidence score, while a
+          score less than 50 indicates a low confidence score.
+        </li>
+        <li>
+          The <b>update()</b> function would take a given sequence string and
+          try to update the current protein structure to a given protein
+          sequence.
+        </li>
+      </ul>
+      <p>
+        The ESMFold application uses a Web API using the URL
+        https://api.esmatlas.com/foldSequence/v1/pdb/. If that URL is not
+        available, then users can use the Google Colab notebook via
+        https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb
+        to test a given protein sequence. They can then upload the pdb results
+        to test the application.
+      </p>
+      <p>
+        Currently, this application can be tested locally on your machine. You
+        need to first create a virtual environment through Anaconda and then
+        activate the virtual enviornment. You can learn more how to do this
+        thorugh the README page of the repo.
+      </p>
     </article>
     <script src="https://justincoding618.github.io/justincoding.github.io/script/app.js"></script>
   </body>
