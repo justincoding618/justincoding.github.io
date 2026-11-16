@@ -37,11 +37,11 @@ function closeAllSubMenus() {
   });
 }
 
-$(function () {
-  $("#navbar-holder").load("/reusable/navbar.html");
-});
-
 const base = "/justincoding.github.io";
+
+$(function () {
+  $("#navbar-holder").load(`${base}/reusable/navbar.html`);
+});
 
 loadHeadFeature("stylesheet", `${base}/css/style.css`);
 loadHeadFeature("icon", `${base}/images/red-circle-j.png`, "x/image");
