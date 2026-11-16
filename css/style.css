@@ -6,11 +6,83 @@
 
 body {
   font-family: "Roboto", Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
   line-height: 1.6;
   color: #000;
   background-color: #f5f5f5;
-  padding: 2rem;
-  padding-top: 80px;
+  font-weight: 600;
+}
+
+#navbar-holder {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: #202020;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  height: 40px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: #ba0c2f;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(32, 32, 32, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
 }
 
 article {
@@ -197,60 +269,6 @@ a:active {
   color: #fdb719;
 }
 
-.mobile-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  overflow: visible; /* Changed from hidden */
-  background-color: #a7b1b7;
-  position: sticky;
-  font-weight: 500;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar .icon {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 14px 16px;
-  font-size: 24px;
-  color: #000;
-  text-decoration: none;
-  z-index: 10;
-}
-
-/* Desktop Navigation Links - VISIBLE and HORIZONTAL */
-.navbar-links {
-  display: inline-block;
-}
-
-.navbar a {
-  display: inline-block;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  background-color: #ba0c2f;
-  color: #fff;
-  font-weight: 500;
-}
-
 .table-scroll {
   display: block;
   overflow-x: auto;
@@ -272,7 +290,13 @@ a:active {
   margin-right: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
   h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -308,12 +332,6 @@ a:active {
     flex-direction: column;
     flex-shrink: 0;
   }
-  th {
-    font-size: 12px;
-  }
-  td {
-    font-size: 12px;
-  }
   .container {
     max-width: 100%;
     display: block;
@@ -322,60 +340,10 @@ a:active {
     margin: 0 auto;
     padding: 0 2rem;
   }
-  .navbar {
-    position: relative;
-    min-height: 50px;
-    display: flex;
-    justify-content: flex-end; /* Push hamburger to the right */
-    align-items: flex-start;
+  th {
+    font-size: 12px;
   }
-  /* Show hamburger icon - NO ABSOLUTE POSITIONING */
-  .navbar .icon {
-    display: block !important;
-    position: relative !important; /* Changed from absolute */
-    padding: 10px 15px;
-    font-size: 24px;
-    color: 000;
-    text-decoration: none;
-    z-index: 1001;
-    background-color: transparent;
-    border: 2px solid transparent;
-    order: 2; /* Force it to be last in flex order */
-    margin-left: auto; /* Push to the right */
-  }
-
-  .navbar .icon:hover,
-  .navbar .icon:active {
-    background-color: #ba0c2f;
-    color: #fff;
-  }
-
-  /* Hide navigation links by default on mobile */
-  .navbar-links {
-    display: none !important;
-    flex-direction: column;
-    width: 100%;
-    background-color: #a7b1b7;
-    position: absolute;
-    top: 50px; /* Below the navbar */
-    left: 0;
-    order: 1;
-  }
-
-  /* Show navigation when active */
-  .navbar-links.responsive {
-    display: flex !important;
-  }
-
-  /* Stack all items vertically */
-  .navbar a,
-  .subnav {
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px;
-  }
-
-  .navbar a {
-    padding: 14px 16px;
+  td {
+    font-size: 12px;
   }
 }
