@@ -1,32 +1,23 @@
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<div class="mobile-container">
-  <div class="navbar">
-    <!-- Hamburger Menu Button -->
-    <a href="#" class="icon">
-      <i class="fa fa-bars"></i>
-    </a>
-    <!-- Navigation Links -->
-    <div class="navbar-links" id="navbarLinks">
-      <a
-        href="https://justincoding618.github.io/justincoding.github.io/"
-        class="active"
-        >Home</a
-      >
-      <a
-        href="https://justincoding618.github.io/justincoding.github.io/work-experience.html"
-        >Work Experience</a
-      >
-      <a
-        href="https://justincoding618.github.io/justincoding.github.io/projects.html"
-        >Projects</a
-      >
-      <a
-        href="https://justincoding618.github.io/justincoding.github.io/skills.html"
-        >Skills</a
-      >
-    </div>
-  </div>
-</div>
+<nav class="navigation-bar">
+  <ul class="sidebar">
+    <li onclick="hideSideBar()">
+      <a href="#"><span class="material-symbols-outlined"> close </span></a>
+    </li>
+    <li><a href="/">Home</a></li>
+    <li><a href="work-experience.html">Work Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">Justin Hsu</a></li>
+    <li class="hideOnMobile"><a href="/">Home</a></li>
+    <li class="hideOnMobile">
+      <a href="work-experience.html">Work Experience</a>
+    </li>
+    <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+    <li class="hideOnMobile"><a href="skills.html">Skills</a></li>
+    <li class="menu-button" onclick="showSideBar()">
+      <a href="#"><span class="material-symbols-outlined"> menu </span></a>
+    </li>
+  </ul>
+</nav>
